@@ -1,0 +1,31 @@
+body {
+	overflow:hidden;
+	margin: 0px;
+}
+
+/* Debug */
+
+div#debug {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 256px;
+	height: 512px;
+	padding: 5px;
+	border: 1px solid rgba(0,0,0,0.5);
+	color: rgba(0,0,0,0.7);
+	font: 12px monospace;
+	
+}
+
+div#debug-table {
+	display: table;
+}
+
+div.debug-row {
+	display: table-row;
+}
+
+div.debug-cell {
+	display: table-row;
+}
