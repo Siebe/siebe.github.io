@@ -3,9 +3,9 @@
 <!--
 Thanks for taking the time to view the source of this document.
 This document is a single HTML 5 compliant file with style
-sheet included, made with notepad++ and the help of Chrome
-developer tools and Google. Later updated with other tools
-as wel. The icons are licensed under the Creative Commons
+sheet included, made with notepad++ and the help of Chrome 
+developer tools and Google. Later updated using other tools
+as well. The icons are licensed under the Creative Commons
 Attribution by http://ipapun.deviantart.com/ and are free
 for personal use.
 
@@ -14,584 +14,626 @@ Siebe
 -->
 
 <head>
-	<title>CV Siebe Domeijer</title>
-	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
-	<style>
+    <title>CV Siebe Domeijer</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <style>
 
-		div.main {
-			display: block;
-			max-width: 1024px;
-			margin-left: auto;
-			margin-right: auto;
-			margin-top: 10px;
-			margin-bottom: 40px;
-			font-family: Helvetica, serif;
-			color: #202020;
-		}
+        div.main {
+            display: block;
+            max-width: 1024px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            margin-bottom: 40px;
+            font-family: Helvetica, serif;
+            color: #202020;
+        }
 
-		h1, h2 {
-			font-family: "Bookman Old Style", Helvetica, serif;
-			/*margin-left: 5px;*/
-			color: #303030;
-		}
+        h1, h2 {
+            font-family: "Bookman Old Style", Helvetica, serif;
+            color: #303030;
+        }
+
+        hr {
+            color: #F8F8F8;
+            font-size: 8px;
+        }
+
+        h2 {
+            margin-top: 30px;
+            margin-left: 5px;
+        }
+
+        div.head {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        div.head div.buttonlist {
+            position: absolute;
+            right: 5px;
+        }
+
+        div.button {
+            float: left;
+            margin: 5px;
+        }
+
+        div.table {
+            display: table;
+            width: 100%;
+            border-bottom: 1px solid #B0B0B0;
+            border-right: 1px solid #B0B0B0;
+            box-shadow: 4px 4px 2px #909090;
+            margin-bottom: 10px;
+        }
+
+        div.row {
+            display: table-row;
+        }
+
+        div.cell {
+            position: relative;
+            z-index: 2;
+            display: table-cell;
+            width: 75%;
+            padding: 5px;
+            border-top: 1px solid #D0D0D0;
+            border-left: 1px solid #D0D0D0;
+        }
+
+        div.label {
+            width: 25%;
+            vertical-align: middle;
+        }
+
+        div.blockcontainer {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        div.block {
+            display: flex;
+            flex-direction: column;
+            max-width: 19.0%;
+        }
+
+        div.button {
+            height: 32px;
+            width: 32px;
+        }
+
+        div.button span {
+            display: inline-block;
+            color: black;
+            line-height: 32px;
+            font-size: 20px;
+        }
+
+        div.button img {
+            width: 100%;
+            height: 100%;
+        }
+
+        div.button img:hover {
+            opacity: 0.6;
+            cursor: pointer;
+        }
+
+        div.button span:hover {
+            color: #707070;
+        }
+
+        div.pagebreak, div.pageheader {
+            display: none;
+        }
+
+        li {
+            padding: 2px;
+            list-style-type: circle;
+        }
+
+        a, a:visited {
+            color: #808080;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        a:hover {
+            color: #A0A0A0;
+        }
+
+        @media screen and (max-width: 800px) {
+            div.head div.buttonlist {
+                position: relative;
+                right: 0px;
+            }
+
+            div.head h1 {
+                flex-basis: 100%;
+                text-align: center;
+                margin: 8px 0;
+            }
+
+            h2 {
+                margin: 20px 0 12px 0;
+            }
+
+            div.block {
+                min-width: 140px;
+            }
+            div.blockcontainer {
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+            }
+        }
 
 
-		h2 {
-			margin-top: 30px;
-			margin-left: 5px;
-		}
+        @media print {
 
-		div.head {
-			display: flex;
-			justify-content: center;
-		}
+            div.pagebreak {
+                display: block;
+                page-break-before: always;
+            }
 
-		div.head div.buttonlist {
-			position: absolute;
-			right: 5px;
-		}
-
-		div.button {
-			float: left;
-			margin: 5px;
-		}
-
-		div.table {
-			display: table;
-			width: 100%;
-			border-bottom: 1px solid #B0B0B0;
-			border-right: 1px solid #B0B0B0;
-			box-shadow: 4px 4px 2px #909090;
-			margin-bottom: 10px;
-
-		}
-
-		div.append {
-			margin-top: 20px;
-		}
-
-		div.row {
-			display: table-row;
-		}
-
-		div.cell {
-			position: relative;
-			z-index: 2;
-			display: table-cell;
-			width: 75%;
-			padding: 5px;
-			border-top: 1px solid #D0D0D0;
-			border-left: 1px solid #D0D0D0;
-		}
-
-		div.label {
-			width: 25%;
-			vertical-align: middle;
-		}
-
-		div.full {
-			width: 100%;
-		}
-
-		div.button {
-			height: 32px;
-			width: 32px;
-		}
-
-		div.button span {
-			display: inline-block;
-			color: black;
-			line-height: 32px;
-			font-size: 20px;
-		}
-
-		div.button img {
-			width: 100%;
-			height: 100%;
-		}
-
-		div.button img:hover {
-			opacity: 0.6;
-			cursor: pointer;
-		}
-
-		div.button span:hover {
-			color: #707070;
-		}
-
-		div.pagebreak {
-			display: none;
-		}
-
-		div.pageheader {
-			display: none;
-		}
-
-		li {
-			padding: 2px;
-			list-style-type: circle;
-		}
-
-		a, a:visited {
-			color: #808080;
-			text-decoration: none;
-			font-weight: bolder;
-		}
-
-		a:hover {
-			color: #A0A0A0;
-		}
-
-		@media print {
-
-			div.pagebreak {
-				display: block;
-				page-break-before: always;
-			}
-
-			div.pageheader {
-				display: block;
-				font-size:12px;
-				text-align: center;
-			}
+            div.pageheader {
+                display: block;
+                font-size: 10px;
+                text-align: center;
+            }
 
 
-			.no-print {
-				display:none;
-			}
+            .no-print {
+                display: none;
+            }
 
-			div.main {
-				margin: 0px;
-			}
+            div.main {
+                margin: 0px;
+            }
 
-			div.table {
-				font-size: 15px;
-			}
+            div.table {
+                font-size: 11px;
+            }
 
-			a, a:visited {
-				color: #202020;
-				font-weight: normal;
-			}
+            a, a:visited {
+                color: #202020;
+                font-weight: normal;
+            }
 
-			h2 {
-				font-size: 20px;
-				margin-top: 25px;
-				margin-bottom: 10px;
-			}
+            h2 {
+                margin: 16px 0 8px 0;
+                font-size: 16px;
+            }
 
-			h1 {
-				font-size: 25px;
-			}
+            h1 {
+                font-size: 20px;
+                margin: 6px 0;
 
-		}
+            }
 
-	</style>
+        }
+
+    </style>
 
 </head>
 <body>
 
 <div class="main">
-	<div class="pageheader">
-		CV Siebe Domeijer 1/2
-	</div>
-	<div class="head">
+    <div class="pageheader">
+        CV Siebe Domeijer 1/2
+    </div>
+    <div class="head">
 
-		<h1>Curriculum Vitae</h1>
+        <h1>Curriculum Vitae</h1>
 
-		<div class="buttonlist no-print">
-		<div class="button">
-			<img src="http://i.imgur.com/gAMQEZQ.png" alt="Print page" title="Print page" onClick="window.print()">
-		</div>
-		<div class="button">
-			<a href="cv_siebe_eng.pdf">
-				<img src="http://i.imgur.com/rNVQ9zt.png" alt="Download PDF" title="Download PDF">
-			</a>
-		</div>
-		<div class="button">
-			<a href="mailto:s.domeijer@gmail.com">
-				<img src="http://i.imgur.com/zjsMNoz.png" alt="Send email" title="Send email">
-			</a>
-		</div>
-		<div class="button">
-			<a href="http://tinyurl.com/siebe-linkedin">
-				<img src="http://i.imgur.com/EJ5gCOD.png" alt="View LinkedIn" title="View LinkedIn">
-			</a>
-		</div>
-		<div class="button">
-			<a href="cv_siebe.html"><span title="Nederlandse versie">NL</span></a>
-		</div>
-	</div>
+        <div class="buttonlist no-print">
+            <div class="button">
+                <img src="http://i.imgur.com/gAMQEZQ.png" alt="Print page" title="Print page" onClick="window.print()">
+            </div>
+            <div class="button">
+                <a href="cv_siebe_eng.pdf">
+                    <img src="http://i.imgur.com/rNVQ9zt.png" alt="Download PDF" title="Download PDF">
+                </a>
+            </div>
+            <div class="button">
+                <a href="mailto:s.domeijer@gmail.com">
+                    <img src="http://i.imgur.com/zjsMNoz.png" alt="Send email" title="Send email">
+                </a>
+            </div>
+            <div class="button">
+                <a href="http://tinyurl.com/siebe-linkedin">
+                    <img src="http://i.imgur.com/EJ5gCOD.png" alt="View LinkedIn" title="View LinkedIn">
+                </a>
+            </div>
+            <div class="button">
+                <a href="cv_siebe.html"><span title="Nederlandse versie">NL</span></a>
+            </div>
+        </div>
+    </div>
+    <h2>Persoonlijke gegevens</h2>
+    <div class="personal-data table">
+        <div class="row">
+            <div class="cell label">
+                Full name
+            </div>
+            <div class="cell">
+                Domeijer, Siebe Diederich
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell label">
+                First name
+            </div>
+            <div class="cell">
+                Siebe
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell label">
+                Phone
+            </div>
+            <div class="cell">
+                +31 (0)6 421 00 969
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell label">
+                Email
+            </div>
+            <div class="cell">
+                <a class="email" href="mailto:s.domeijer@gmail.com">s.domeijer@gmail.com</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell label">
+                Address
+            </div>
+            <div class="cell">
+                Berlagelaan 84, 1222 KA Hilversum
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell label">
+                Birthdate
+            </div>
+            <div class="cell">
+                23 juni 1984
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell label">
+                Birthplace
+            </div>
+            <div class="cell">
+                Hilversum
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell label">
+                Drivers licence
+            </div>
+            <div class="cell">
+                B, Vorkheftruck
+            </div>
+        </div>
+    </div>
 
-</div>
-<h2>Personal data</h2>
-<div class="personal-data table">
-	<div class="row">
-		<div class="cell label">
-		Full name
-		</div>
-		<div class="cell">
-		Domeijer, Siebe Diederich
-		</div>
-	</div>
-	<div class="row">
-		<div class="cell label">
-		Surname
-		</div>
-		<div class="cell">
-		Siebe 
-		</div>
-	</div>
-	<div class="row">
-		<div class="cell label">
-		Phone
-		</div>
-		<div class="cell">
-		+31 (0)6 421 00 969
-		</div>
-	</div>
-	<div class="row">
-		<div class="cell label">
-		Email
-		</div>
-		<div class="cell">
-		<a class="email" href="mailto:s.domeijer@gmail.com">s.domeijer@gmail.com</a>
-		</div>
-	</div>
-	<div class="row">
-		<div class="cell label">
-		Address
-		</div>
-		<div class="cell">
-		Spoorstraat 25, 3862 AC Nijkerk, The Netherlands (NL)
-		</div>
-	</div>
-	<div class="row">
-		<div class="cell label">
-		Birthdate
-		</div>
-		<div class="cell">
-		23 June 1984
-		</div>
-	</div>
-	<div class="row">
-		<div class="cell label">
-		Birthplace
-		</div>
-		<div class="cell">
-		Hilversum, NL
-		</div>
-	</div>
-	<div class="row">
-		<div class="cell label">
-		Gender
-		</div>
-		<div class="cell">
-		male
-		</div>
-	</div>
-	<div class="row">
-		<div class="cell label">
-		Drivers Licence
-		</div>
-		<div class="cell">
-		B, Forklift
-		</div>
-	</div>
-</div>
+    <h2>Education</h2>
+    <div class="education table">
+        <div class="row">
+            <div class="cell label">
+                August 2001
+            </div>
+            <div class="cell">
+                <b>Transfer Reference Atheneum 3>4</b><br>
+                Baarnsch Lyceum in Baarn, NL
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell label">
+                August 2005
+            </div>
+            <div class="cell">
+                <b>Middle Management Diploma Telematics</b><br>
+                ROC Midden Nederland, Utrecht, NL<br>
+                Part-time education (MBO level 4)
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell label">
+                June 2010
+            </div>
+            <div class="cell">
+                <b>Diploma Bachelor with Hounours of Art and Technology </b><br>
+                <a href ="http://www.hku.nl/English/FacultyOfArtMediaTechnology/AboutTheFaculty.htm" target="_blank">HKU Kunst, Media & Technologie</a> in Hilversum<br>
+                Fulltime Education MusicTechnology, Audiodesign, courses: Softwaredesign and Sonicdesign
+            </div>
+        </div>
+    </div>
 
-<h2>Education</h2>
-<div class="education table">
-	<div class="row">
-		<div class="cell label">
-		August 2001
-		</div>
-		<div class="cell">
-		<b>Transfer Reference Atheneum 3>4</b><br>
-		Baarnsch Lyceum in Baarn, NL
-		</div>
-	</div>
-	<div class="row">
-		<div class="cell label">
-		August 2005
-		</div>
-		<div class="cell">
-		<b>Middle Management Diploma Telematics</b><br>
-		ROC Midden Nederland, Utrecht, NL<br>
-		Part-time education (MBO level 4)
-		</div>
-	</div>	
-	<div class="row">
-		<div class="cell label">
-		June 2010
-		</div>
-		<div class="cell">
-		<b>Diploma Bachelor with Hounours of Art and Technology </b><br>
-		<a href ="http://www.hku.nl/English/FacultyOfArtMediaTechnology/AboutTheFaculty.htm" target="_blank">HKU Kunst, Media & Technologie</a> in Hilversum<br>
-		Fulltime Education MusicTechnology, Audiodesign, course: softwaredesign, sonicdesign
-		</div>
-	</div>
-</div>
+    <h2>Work history</h2>
+    <div class="experience table">
+        <div class="row">
+            <div class="cell label">
+                Februari 2015 till preset
+            </div>
+            <div class="cell">
+                <b>Pluxcustoms in Hilversum, NL</b> Webdevelopment<br>
+                <a href="http://pluxbox.com" target="_blank">Pluxcustoms</a> specializes in platforms, tools and metadata
+                for radio stations. Their main projects are <a href="https://radiomanager.io" target="_blank">
+                RadioManager</a> en <a href="https://metadata.radio" target="_blank">metadata.radio</a>
+                <hr>
+                Working on design, implementation, hosting and support of web applications.<br>
+                Mostly backend work using PHP, NodeJS, Python, Bash, MySQL, Redis and ArangoDb.<b></b>
+                Frontend using AngularJS, ReactJS, Webcomponents and more.<br>
+                Hosting, deployment and maintenance on Linux using Nginx, Strongswan, Ansible, Kubernetes and more.<br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell label">
+                October 2012 t/m December 2014
+            </div>
+            <div class="cell">
+                <b>Creative Crowds in Amsterdam, NL</b> Webdevelopment<br>
+                <a href="http://creativecrowds.com" target="_blank">CreativeCrowdss</a> specializes in platforms for
+                crowdsourcing applications and communities. Their main project was
+                <a href="http://www.verbeterdebuurt.nl" target="_blank">VerbeterDeBuurt</a>.
+                <hr>
+                Working on the design, implementation and hosting of web applications.<br>
+                Mostly backend work using PHP, MySQL and PostgreSQL. Frontend with Mootools and Google Maps API.<br>
+                Also hosting and administration on Linux, using Apache, Perl and more.
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell label">
+                June 2005 till December 2011
+            </div>
+            <div class="cell">
+                <b>Ampco-Flashlight Group in Utrecht, NL</b> Sound and Light Rentals<br>
+                Started as a warehouse employee on Saturdays and holidays, during my study.
+                Full-time employee since 2009.
+                Worked as a service-center employee with light equipment.
+                Also had the function of warehouse and expedition foreman on Saturday.
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell label">
+                October 2006 till August 2009
+            </div>
+            <div class="cell">
+                <b>Hogeschool Kunsten Utrecht, KMT in Hilversum, NL</b> Education<br>
+                During my college time I worked as a practicum assistant.
+                This means I have given practical lessons in the use of Max/MSP to fellow students.
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell label">
+                April 2012 till August 2012
+            </div>
+            <div class="cell">
+                Mailman and sorting clerk at PostNL in Soest, NL
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell label">
+                January 2004 t/m May 2005
+            </div>
+            <div class="cell">
+                Temporary work via UBN te Amersfoort: including warehouse management at TVF (Optics) in Soesterberg, NL
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell label">
+                mid 2002
+            </div>
+            <div class="cell">
+                Assistant Electrician at Breunesse Bv. in Baarn, NL
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell label">
+                start 2002 till end 2002
+            </div>
+            <div class="cell">
+                Assistant Electrician at v.d. Hoogen eng. Bv. in Bunschoten, NL
+            </div>
+        </div>
+    </div>
 
+    <div class="pagebreak"></div>
+    <div class="pageheader">CV Siebe Domeijer 2/2</div>
 
+    <h2>Volunteer work history</h2>
+    <div class="volunteer table">
+        <div class="row">
+            <div class="cell label">
+                2011 till 2013
+            </div>
+            <div class="cell">
+                Plugin developer for various games
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell label">
+                2007 till 2013
+            </div>
+            <div class="cell">
+                Webmaster for various community fora about games
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell label">
+                2006 till 2010
+            </div>
+            <div class="cell">
+                Technical organisation at schoolfestivals "Nieuwe Verse Groenten" for the HKU
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell label">
+                June 2005
+            </div>
+            <div class="cell">
+                Lead Lighttechnician TorenPop 2005, Amersfoort
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell label">
+                Augustus 2004
+            </div>
+            <div class="cell">
+                Lighttechnician TorenPop 2004, Amersfoort
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell label">
+                Oktober 1999 till September 2000
+            </div>
+            <div class="cell">
+                Cultural Senior (student organisation) Baarnsch Lyceum
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell label">
+                1999 till 2002
+            </div>
+            <div class="cell">
+                Spending free ours working at Future Audio, Baarn
+            </div>
+        </div>
+    </div>
 
-<h2>Work history</h2>
-<div class="experience table">
-	<div class="row">
-		<div class="cell label">
-		October 2012 till December 2014
+    <h2>Programming skills</h2>
+    <div class="automatisation table">
+        <div class="row">
+            <div class="cell label">
+                <b>HTML5, JS & CSS3/Sass</b>
+            </div>
+            <div class="cell">
+                highly skilled
+            </div>
+        </div>
+		<div class="row">
+			<div class="cell label">
+				<b>PHP7, MySQL</b>
+			</div>
+			<div class="cell">
+                highly skilled
+			</div>
 		</div>
-		<div class="cell">
-		<b>Creative Crowds in Amsterdam</b> Webdevelopment<br>
-		Working on the design, implementation and hosting of web applications
-		Mostly backend work and working with database like MysQL and PostgreSQL.
-		Also hosting and administration on Linux, using Apache, Perl and more.
-		<a href="http://creativecrowds.com" target="_blank">CreativeCrowds</a> specializes in platforms for crowdsourcing applications and communities.
-		Their main project is <a href="http://www.verbeterdebuurt.nl" target="_blank">VerbeterDeBuurt</a>.
+        <div class="row">
+            <div class="cell label">
+                <b>NodeJS, ES6</b>
+            </div>
+            <div class="cell">
+                highly skilled
+            </div>
+        </div>
+		<div class="row">
+			<div class="cell label">
+				<b>ArangoDb</b>
+			</div>
+			<div class="cell">
+                average skilled
+			</div>
 		</div>
-	</div>
-	<div class="row">
-		<div class="cell label">
-		June 2005 till December 2011
+		<div class="row">
+			<div class="cell label">
+				<b>TypeScript</b>
+			</div>
+			<div class="cell">
+                average skilled
+			</div>
 		</div>
-		<div class="cell">
-		<b>Ampco-Flashlight Group in Utrecht</b> Sound and Light Rentals<br>
-		Started as a warehouse employee on Saturdays and holidays, during my study. 
-		Full-time since employeee 2009. 
-		Worked as a service-center employee with light equipment. 
-		Also had the function of warehouse and expedition foreman on Saturday. 
+        <div class="row">
+            <div class="cell label">
+                <b>Python3</b>
+            </div>
+            <div class="cell">
+                average skilled
+            </div>
+        </div>
+		<div class="row">
+			<div class="cell label">
+				<b>C & C++</b>
+			</div>
+			<div class="cell">
+                average skilled, mostly in combination with MaxMSP
+			</div>
 		</div>
-	</div>
-	<div class="row">
-		<div class="cell label">
-		October 2006 till August 2009
+    </div>
+    <div class="automatisation blockcontainer">
+        <div class="block table">
+            <div class="blocktitle cell">
+                <b>Operating systems</b>
+            </div>
+            <div class="blockcontent cell">
+                Windows, MacOSX/UNIX, Linux and high knowledge of Ubuntu/Debian Server
+            </div>
+        </div>
+        <div class="block table">
+            <div class="blocktitle cell">
+                <b>Frameworks, standards</b>
+            </div>
+            <div class="blockcontent cell">
+                Laravel, Symfony, Express, REST, Apollo/GraphQL, OpenAPI, Webcomponents and more
+            </div>
+        </div>
+        <div class="block table">
+            <div class="blocktitle cell">
+                <b>Development tools</b>
+            </div>
+            <div class="blockcontent cell">
+                Vim, Git, PhpStorm, Kubernetes, Ansible, webpack, several CLI tools and more
+            </div>
+        </div>
+        <div class="block table">
+            <div class="blocktitle cell">
+                <b>Media tools</b>
+            </div>
+            <div class="blockcontent cell">
+                PureData, Jack, Sox, FFmpeg, VLC, Renoise, Reason, Ableton Live, GMagick, Gimp
+            </div>
+        </div>
+		<div class="block table">
+            <div class="blocktitle cell">
+                <b>Methodology, service tools</b>
+            </div>
+            <div class="blockcontent cell">
+				Kanban, Scrum/Agile development, Jira en Zendesk. Less is More and KISS.
+			</div>
 		</div>
-		<div class="cell">
-		<b>Hogeschool Kunsten Utrecht, KMT in Hilversum</b> Education<br>
-		During my college time I worked as a practicum assistant. 
-		This means I have given practical lessons in the use of Max/MSP to fellow students.
-		</div>
-	</div>	
-	<div class="row">
-		<div class="cell label">
-		January 2004 till May 2005
-		</div>
-		<div class="cell">
-		<b>UBN Uitzendbureau in Amersfoort, NL</b> Temporary work, Optics (TVF)<br>
-		Over the period of a yearmostly temporary agency work. 
-		Most of that took place at The Vision Factory in Soesterberg. 
-		The work I did there included order-picking, production-assistance and warehouse-management.
-		</div>
-	</div>	
-	<div class="row">
-		<div class="cell label">
-		April 2012 till August 2012
-		</div>
-		<div class="cell">
-		Mailman and sorting clerk at PostNL in Soest, NL
-		</div>
-	</div>	
-	<div class="row">
-		<div class="cell label">
-		mid 2002
-		</div>
-		<div class="cell">
-		Assistant Electrician at Breunesse Bv. in Baarn
-		</div>
-	</div>
-	<div class="row">
-		<div class="cell label">
-		start 2001 till end 2002
-		</div>
-		<div class="cell">
-		Assistant Electrician at v.d. Hoogen eng. Bv. in Bunschoten, NL
-		</div>
-	</div>	
-	<div class="row">
-		<div class="cell label">
-		2001
-		</div>
-		<div class="cell">
-		Storage Employee at Nijhof in Baarn, side-line
-		</div>
-	</div>
-</div>	
+    </div>
 
-<div class="pagebreak"></div>
-<div class="pageheader">CV Siebe Domeijer 2/2</div>
+        <h2>Languages</h2>
+        <div class="language table">
+            <div class="row">
+                <div class ="cell label">
+                    <b>Dutch</b>
+                </div>
+                <div class="cell">
+                    native language
+                </div>
+            </div>
+            <div class="row">
+                <div class ="cell label">
+                    <b>English</b>
+                </div>
+                <div class="cell">
+                    highly skilled
+                </div>
+            </div>
+            <div class="row">
+                <div class ="cell label">
+                    <b>German</b>
+                </div>
+                <div class="cell">
+                    average skilled in speaking and understanding
+                </div>
+            </div>
+        </div>
 
-<h2>Volunteer work history</h2>
-<div class="volunteer table">
-	<div class="row">
-		<div class="cell label">
-		2011 till 2013
-		</div>
-		<div class="cell">
-		Plugin developer for various games
-		</div>
-	</div>
-	<div class="row">
-		<div class="cell label">
-		2007 till 2013
-		</div>
-		<div class="cell">
-		Webmaster for various community fora about games
-		</div>
-	</div>
-	<div class="row">
-		<div class="cell label">
-		2006 till 2010
-		</div>
-		<div class="cell">
-		Technical orginastation at schoolfestivals "Nieuwe Verse Groenten" for the HKU
-		</div>
-	</div>
-	<div class="row">
-		<div class="cell label">
-		June 2005
-		</div>
-		<div class="cell">
-		Lead Lighttechnician TorenPop 2005, Amersfoort
-		</div>
-	</div>
-	<div class="row">
-		<div class="cell label">
-		Augustus 2004
-		</div>
-		<div class="cell">
-		Lighttechnician TorenPop 2004, Amersfoort
-		</div>
-	</div>
-	<div class="row">
-		<div class="cell label">
-		Oktober 2000 till September 2001
-		</div>
-		<div class="cell">
-		Cultureel Senior (student organisation) Baarnsch Lyceum
-		</div>
-	</div>
-	<div class="row">
-		<div class="cell label">
-		1999 till 2002
-		</div>
-		<div class="cell">
-		Spending free ours working at Future Audio, Baarn
-		</div>
-	</div>
-</div>
-
-<h2>Programming skills</h2>
-<div class="automatisation table">
-	<div class="row"> 
-		<div class="cell label">
-		<b>HTML, PHP & MySQL</b>
-		</div>
-		<div class="cell">
-		highly skilled
-		</div>
-	</div>
-	<div class="row">
-		<div class="cell label">
-		<b>Javascript, CSS</b>
-		</div>
-		<div class="cell">
-		average skilled
-		</div>
-	</div>
-	<div class="row">
-		<div class="cell label">
-		<b>MaxMSP & Pure Data</b>
-		</div>
-		<div class="cell">
-		highly skilled
-		</div>
-	</div>
-	<div class="row">
-		<div class="cell label">
-		<b>C & C++</b>
-		</div>
-		<div class="cell">
-		average skilled, mostly in DSP and combination with MaxMSP/PD
-		</div>
-	</div>
-	<div class="row">
-		<div class="cell label"><b>Java</b>
-		</div>
-		<div class="cell">
-		gaverage skilled, mostly in combination with MaxMSP
-		</div>
-	</div>
-	<div class="row">
-		<div class="cell label">
-		<b>Pascal & Delphi</b>
-		</div>
-		<div class="cell">
-		average skilled
-		</div>
-	</div>
-	<div class="row">
-		<div class="cell label">
-		<b>Perl</b>
-		</div>
-		<div class="cell">
-		average skilled
-		</div>
-	</div>
-</div>
-<div class="automatisation table append">
-	<div class="row">
-		<div class="cell full">
-		Experienced in working with Windows, MacOSX and high knowledge about Linux (Server)
-		</div>
-	</div>
-	<div class="row">
-		<div class="cell">
-		Experience with some (web) frameworks: Symfony, Zend, Propel, Falcon, RedBeanPHP, MooTools, jQuery, Google Maps API and more
-		</div>
-	</div>
-	<div class="row">
-		<div class="cell">
-		Experience with development software: NetBeans IDE, MySQLWorkbench, PHPMyAdmin, Notepad++, vim, Git and more
-		</div>
-	</div>
-	<div class="row">
-		<div class="cell">
-		Experience with audio software: Reason, Ableton Live, Renoise, SoundForge, ChuCk, SuperCollider and more
-		</div>
-	</div>
-	<div class="row">
-		<div class="cell">
-		Eperience working with Office, OpenOffice, Google Drive and Navision packets, also skilled (blind) typer
-		</div>
-	</div>
-</div>
-
-<h2>Languages</h2>
-<div class="language table"> 
-	<div class="row">
-		<div class ="cell label"> 
-		<b>Dutch</b>
-		</div>
-		<div class="cell">
-		native language
-		</div>
-	</div>
-	<div class="row">
-		<div class ="cell label">
-		<b>English</b>
-		</div>
-		<div class="cell">
-		highly skilled
-		</div>
-	</div>
-	<div class="row">
-		<div class ="cell label">
-		<b>German</b>
-		</div>
-		<div class="cell">
-		average skilled in speaking and understanding
-		</div>
-	</div>
-</div>
 
 </div>
 </body>
