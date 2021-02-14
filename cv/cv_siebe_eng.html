@@ -50,7 +50,7 @@ Siebe
             justify-content: center;
         }
 
-        div.head div.buttonlist {
+        div.buttonlist {
             position: absolute;
             right: 5px;
         }
@@ -91,12 +91,25 @@ Siebe
         div.blockcontainer {
             display: flex;
             justify-content: space-between;
+            margin: 0 -.66% -10px -.5%;
         }
+
 
         div.block {
             display: flex;
             flex-direction: column;
-            max-width: 19.0%;
+            flex: 1 0 18%;
+            margin: 0 .5% 10px .5%;
+        }
+
+        div.blocktitle {
+            width: auto;
+            min-height: 38px;
+        }
+
+        div.blockcontent{
+            width: auto;
+            height: 100%;
         }
 
         div.button {
@@ -160,12 +173,16 @@ Siebe
                 margin: 20px 0 12px 0;
             }
 
-            div.block {
-                min-width: 140px;
-            }
             div.blockcontainer {
-                justify-content: space-evenly;
                 flex-wrap: wrap;
+            }
+
+            div.block {
+                flex: 1 0 31%;
+            }
+
+            div.blocktitle {
+                min-height: revert;
             }
         }
 
@@ -194,6 +211,10 @@ Siebe
 
             div.table {
                 font-size: 11px;
+            }
+
+            div.blocktitle {
+                min-height: 25px;
             }
 
             a, a:visited {
@@ -511,7 +532,7 @@ Siebe
         </div>
         <div class="row">
             <div class="cell label">
-                Oktober 1999 till September 2000
+                1999 till 2000
             </div>
             <div class="cell">
                 Cultural Senior (student organisation) Baarnsch Lyceum
