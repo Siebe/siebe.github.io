@@ -15,10 +15,10 @@ Siebe
 
 <head>
     <title>CV Siebe Domeijer (out of date)</title>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta charset="UTF-8">
     <style>
 
-        div.main {
+        main {
             display: block;
             max-width: 1024px;
             margin-left: auto;
@@ -44,13 +44,13 @@ Siebe
             margin-left: 5px;
         }
 
-        div.head {
+        header {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
         }
 
-        div.buttonlist {
+        nav.buttonlist {
             position: absolute;
             right: 5px;
         }
@@ -60,32 +60,26 @@ Siebe
             margin: 5px;
         }
 
-        div.table {
-            display: table;
+        table {
             width: 100%;
             border-bottom: 1px solid #B0B0B0;
             border-right: 1px solid #B0B0B0;
             box-shadow: 4px 4px 2px #909090;
             margin-bottom: 10px;
+            border-spacing: 0;
         }
 
-        div.row {
-            display: table-row;
-        }
-
-        div.cell {
-            position: relative;
-            z-index: 2;
-            display: table-cell;
-            width: 75%;
+        td, th {
             padding: 5px;
             border-top: 1px solid #D0D0D0;
             border-left: 1px solid #D0D0D0;
+            text-align: left;
         }
 
-        div.label {
+        th {
             width: 25%;
             vertical-align: middle;
+            font-weight: normal;
         }
 
         div.blockcontainer {
@@ -158,12 +152,12 @@ Siebe
         }
 
         @media screen and (max-width: 800px) {
-            div.head div.buttonlist {
+            header nav.buttonlist {
                 position: relative;
                 right: 0px;
             }
 
-            div.head h1 {
+            header h1 {
                 flex-basis: 100%;
                 text-align: center;
                 margin: 8px 0;
@@ -205,11 +199,11 @@ Siebe
                 display: none;
             }
 
-            div.main {
+            main {
                 margin: 0px;
             }
 
-            div.table {
+            table {
                 font-size: 11px;
             }
 
@@ -240,7 +234,7 @@ Siebe
                 background: #202020;
             }
 
-            div.main {
+            main {
                 color: #D0D0D0;
             }
 
@@ -264,15 +258,15 @@ Siebe
 </head>
 <body>
 
-<div class="main">
+<main>
     <div class="pageheader">
         CV Siebe Domeijer 1/2
     </div>
-    <div class="head">
+    <header>
 
         <h1>Curriculum Vitae</h1>
 
-        <div class="buttonlist no-print">
+        <nav class="buttonlist no-print">
             <div class="button">
                 <img src="//i.imgur.com/gAMQEZQ.png" alt="Print pagina" title="Print pagina"
                      onClick="window.print()">
@@ -295,388 +289,400 @@ Siebe
             <div class="button">
                 <a href="cv_siebe_eng.html"><span title="English version">EN</span></a>
             </div>
-        </div>
+        </nav>
 
-    </div>
-    <h2>Persoonlijke gegevens</h2>
-    <div class="personal-data table">
-        <div class="row">
-            <div class="cell label">
-                Naam
-            </div>
-            <div class="cell">
-                Domeijer, Siebe Diederich
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                Roepnaam
-            </div>
-            <div class="cell">
-                Siebe
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                Email
-            </div>
-            <div class="cell">
-                <a class="email" href="mailto:s.domeijer@gmail.com">s.domeijer@gmail.com</a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                Adres
-            </div>
-            <div class="cell">
-                Berlagelaan 84, 1222 KA Hilversum
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                Geboortedatum
-            </div>
-            <div class="cell">
-                23 juni 1984
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                Geboorteplaats
-            </div>
-            <div class="cell">
-                Hilversum
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                Rijbewijs
-            </div>
-            <div class="cell">
-                B, Vorkheftruck
-            </div>
-        </div>
-    </div>
+    </header>
+    <section>
+        <h2>Persoonlijke gegevens</h2>
+        <table class="personal-data">
+            <tr>
+                <th>
+                    Naam
+                </th>
+                <td>
+                    Domeijer, Siebe Diederich
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Roepnaam
+                </th>
+                <td>
+                    Siebe
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Email
+                </th>
+                <td>
+                    <a class="email" href="mailto:s.domeijer@gmail.com">s.domeijer@gmail.com</a>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Adres
+                </th>
+                <td>
+                    Berlagelaan 84, 1222 KA Hilversum
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Geboortedatum
+                </th>
+                <td>
+                    23 juni 1984
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Geboorteplaats
+                </th>
+                <td>
+                    Hilversum
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Rijbewijs
+                </th>
+                <td>
+                    B, Vorkheftruck
+                </td>
+            </tr>
+        </table>
+    </section>
 
-    <h2>Opleidingen</h2>
-    <div class="education table">
-        <div class="row">
-            <div class="cell label">
-                augustus 2001
-            </div>
-            <div class="cell">
-                <b>Overgangsbewijs atheneum 3>4</b><br>
-                Baarnsch Lyceum te Baarn
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                augustus 2005
-            </div>
-            <div class="cell">
-                <b>Diploma middenkaderfunctionaris Telematica niveau 4</b><br>
-                ROC Midden Nederland, Utrecht<br>
-                Deeltijd opleiding
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                juni 2010
-            </div>
-            <div class="cell">
-                <b>Diploma Bachelor of Art and Technology with Honours (Muziektechnologie)</b><br>
-                <a href="http://www.hku.nl/English/FacultyOfArtMediaTechnology/AboutTheFaculty.htm" target="_blank">HKU
-                    Kunst, Media & Technologie</a> te Hilversum<br>
-                Voltijd opleiding Audiodesign, richtingen: software design en klankontwerp.
-            </div>
-        </div>
-    </div>
+    <section>
+        <h2>Opleidingen</h2>
+        <table class="education">
+            <tr>
+                <th>
+                    augustus 2001
+                </th>
+                <td>
+                    <b>Overgangsbewijs atheneum 3>4</b><br>
+                    Baarnsch Lyceum te Baarn
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    augustus 2005
+                </th>
+                <td>
+                    <b>Diploma middenkaderfunctionaris Telematica niveau 4</b><br>
+                    ROC Midden Nederland, Utrecht<br>
+                    Deeltijd opleiding
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    juni 2010
+                </th>
+                <td>
+                    <b>Diploma Bachelor of Art and Technology with Honours (Muziektechnologie)</b><br>
+                    <a href="http://www.hku.nl/English/FacultyOfArtMediaTechnology/AboutTheFaculty.htm" target="_blank">HKU
+                        Kunst, Media & Technologie</a> te Hilversum<br>
+                    Voltijd opleiding Audiodesign, richtingen: software design en klankontwerp.
+                </td>
+            </tr>
+        </table>
+    </section>
 
 <!--    <div class="pagebreak"></div>-->
 <!--    <div class="pageheader">CV Siebe Domeijer 2/3</div>-->
 
-    <h2>Werkervaring</h2>
-    <div class="experience table">
-        <div class="row">
-            <div class="cell label">
-                februari 2015 tot heden
-            </div>
-            <div class="cell">
-                <b>Pluxcustoms te Hilversum</b> Webdevelopment<br>
-                <a href="http://pluxbox.com" target="_blank">Pluxcustoms</a> specialiseert zich in platformen, tools en
-                metadata voor radio stations. Hun hoofdprojecten zijn <a href="https://radiomanager.io" target="_blank">
-                RadioManager</a> en <a href="https://metadata.radio" target="_blank">metadata.radio</a>
-                <hr>
-                Werkzaamheden: Ontwerp, implementatie, hosting en support van web applicaties.<br>
-                Veelal Backend werk in PHP, NodeJS, Python, Bash, MySQL, Redis en ArangoDb. <br>
-                Frontend o.a. met AngularJS, ReactJS en Webcomponents.<br>
-                Hosting, deployment en onderhoud op Linux met o.a. Nginx, Strongswan, Ansible, Kubernetes en Nagios.
-                Huidige titel is "Tech Lead" en daarbij ook werkzaam in de rol van Product Owner .
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                oktober 2012 t/m december 2014
-            </div>
-            <div class="cell">
-                <b>Creative Crowds te Amsterdam</b> Webdevelopment<br>
-                <a href="http://creativecrowds.com" target="_blank">CreativeCrowds</a> specialiseert zich in platformen
-                voor crowdsourcing applicaties en communities. Hun hoofdproject was destijds
-                <a href="http://www.verbeterdebuurt.nl" target="_blank">VerbeterDeBuurt</a>.
-                <hr>
-                Werkzaamheden: Ontwerp, implementatie en hosting van web applicaties.<br>
-                Veelal backend werk in PHP, MySQL en PostgreSQL. Frontend met MooTools en Google Maps API.<br>
-                Ook hosting en administratief werk op Linux met o.a. Apache, Perl en Nagios.
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                juni 2005 t/m december 2011
-            </div>
-            <div class="cell">
-                <b>Ampco-Flashlight Group te Utrecht</b> Licht en geluid verhuur<br>
-                Begonnen als magazijnmedewerker op de zaterdagen en vakanties, tijdens de studie.
-                Sinds 2009 voltijd (40u) werkzaaam als servicecentre-medewerker bij Flashlight.
-                Tevens regelmatig voorman magazijn op zaterdagen.
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                oktober 2006 t/m augustus 2009
-            </div>
-            <div class="cell">
-                <b>Hogeschool Kunsten Utrecht, KMT te Hilversum</b> Voortgezet onderwijs<br>
-                Tijdens de studie heb ik regelmatig gewerkt als practicum assistent.
-                Dit houdt in het geven van les aan medeleerlingen over het gebruik van MaxMSP.
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                april 2012 t/m augustus 2012
-            </div>
-            <div class="cell">
-                Bezorger en sorteerder bij PostNL
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                januari 2004 t/m mei 2005
-            </div>
-            <div class="cell">
-                Uitzendwerk via UBN te Amersfoort: o.a. optiek, magazijn management bij TVF te Soesterberg
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                medio 2002
-            </div>
-            <div class="cell">
-                Hulpmonteur bij Breunesse Elektro bv te Baarn
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                eind 2001 t/m begin 2002
-            </div>
-            <div class="cell">
-                Hulpmonteur bij v.d. Hoogen eng. Bv. te Bunschoten
-            </div>
-        </div>
-    </div>
+    <section>
+        <h2>Werkervaring</h2>
+        <table class="experience">
+            <tr>
+                <th>
+                    februari 2015 tot heden
+                </th>
+                <td>
+                    <b>Pluxcustoms te Hilversum</b> Webdevelopment<br>
+                    <a href="http://pluxbox.com" target="_blank">Pluxcustoms</a> specialiseert zich in platformen, tools en
+                    metadata voor radio stations. Hun hoofdprojecten zijn <a href="https://radiomanager.io" target="_blank">
+                    RadioManager</a> en <a href="https://metadata.radio" target="_blank">metadata.radio</a>
+                    <hr>
+                    Werkzaamheden: Ontwerp, implementatie, hosting en support van web applicaties.<br>
+                    Veelal Backend werk in PHP, NodeJS, Python, Bash, MySQL, Redis en ArangoDb. <br>
+                    Frontend o.a. met AngularJS, ReactJS en Webcomponents.<br>
+                    Hosting, deployment en onderhoud op Linux met o.a. Nginx, Strongswan, Ansible, Kubernetes en Nagios.
+                    Huidige titel is "Tech Lead" en daarbij ook werkzaam in de rol van Product Owner .
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    oktober 2012 t/m december 2014
+                </th>
+                <td>
+                    <b>Creative Crowds te Amsterdam</b> Webdevelopment<br>
+                    <a href="http://creativecrowds.com" target="_blank">CreativeCrowds</a> specialiseert zich in platformen
+                    voor crowdsourcing applicaties en communities. Hun hoofdproject was destijds
+                    <a href="http://www.verbeterdebuurt.nl" target="_blank">VerbeterDeBuurt</a>.
+                    <hr>
+                    Werkzaamheden: Ontwerp, implementatie en hosting van web applicaties.<br>
+                    Veelal backend werk in PHP, MySQL en PostgreSQL. Frontend met MooTools en Google Maps API.<br>
+                    Ook hosting en administratief werk op Linux met o.a. Apache, Perl en Nagios.
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    juni 2005 t/m december 2011
+                </th>
+                <td>
+                    <b>Ampco-Flashlight Group te Utrecht</b> Licht en geluid verhuur<br>
+                    Begonnen als magazijnmedewerker op de zaterdagen en vakanties, tijdens de studie.
+                    Sinds 2009 voltijd (40u) werkzaaam als servicecentre-medewerker bij Flashlight.
+                    Tevens regelmatig voorman magazijn op zaterdagen.
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    oktober 2006 t/m augustus 2009
+                </th>
+                <td>
+                    <b>Hogeschool Kunsten Utrecht, KMT te Hilversum</b> Voortgezet onderwijs<br>
+                    Tijdens de studie heb ik regelmatig gewerkt als practicum assistent.
+                    Dit houdt in het geven van les aan medeleerlingen over het gebruik van MaxMSP.
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    april 2012 t/m augustus 2012
+                </th>
+                <td>
+                    Bezorger en sorteerder bij PostNL
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    januari 2004 t/m mei 2005
+                </th>
+                <td>
+                    Uitzendwerk via UBN te Amersfoort: o.a. optiek, magazijn management bij TVF te Soesterberg
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    medio 2002
+                </th>
+                <td>
+                    Hulpmonteur bij Breunesse Elektro bv te Baarn
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    eind 2001 t/m begin 2002
+                </th>
+                <td>
+                    Hulpmonteur bij v.d. Hoogen eng. Bv. te Bunschoten
+                </td>
+            </tr>
+        </table>
+    </section>
 
     <div class="pagebreak"></div>
     <div class="pageheader">CV Siebe Domeijer 2/2</div>
 
-    <h2>Vrijwilligerswerk ervaring</h2>
-    <div class="volunteer table">
-        <div class="row">
-            <div class="cell label">
-                2011 t/m 2013
-            </div>
-            <div class="cell">
-                Plugin developer voor diverse games
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                2007 t/m 2013
-            </div>
-            <div class="cell">
-                Webmaster voor community fora over games
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                2006 t/m 2010
-            </div>
-            <div class="cell">
-                Technische organisatie voor schoolfestivals "Nieuwe Verse Groenten" te HKU
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                juni 2005
-            </div>
-            <div class="cell">
-                Coördinerend lichttechnicus TorenPop 2005, Amersfoort
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                augustus 2004
-            </div>
-            <div class="cell">
-                Uitvoerend lichttechnicus TorenPop 2004, Amersfoort
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                1999 t/m 2000
-            </div>
-            <div class="cell">
-                Cultureel Senior (leerlingenorganisatie) Baarnsch Lyceum
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                1999 t/m 2002
-            </div>
-            <div class="cell">
-                In vrije tijd assistent verkoper bij Future Audio te Baarn
-            </div>
-        </div>
-    </div>
+    <section>
+        <h2>Vrijwilligerswerk ervaring</h2>
+        <table class="volunteer">
+            <tr>
+                <th>
+                    2011 t/m 2013
+                </th>
+                <td>
+                    Plugin developer voor diverse games
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    2007 t/m 2013
+                </th>
+                <td>
+                    Webmaster voor community fora over games
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    2006 t/m 2010
+                </th>
+                <td>
+                    Technische organisatie voor schoolfestivals "Nieuwe Verse Groenten" te HKU
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    juni 2005
+                </th>
+                <td>
+                    Coördinerend lichttechnicus TorenPop 2005, Amersfoort
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    augustus 2004
+                </th>
+                <td>
+                    Uitvoerend lichttechnicus TorenPop 2004, Amersfoort
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    1999 t/m 2000
+                </th>
+                <td>
+                    Cultureel Senior (leerlingenorganisatie) Baarnsch Lyceum
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    1999 t/m 2002
+                </th>
+                <td>
+                    In vrije tijd assistent verkoper bij Future Audio te Baarn
+                </td>
+            </tr>
+        </table>
+    </section>
 
-    <h2>Automatiseringskennis</h2>
-    <div class="automatisation table">
-        <div class="row">
-            <div class="cell label">
-                <b>HTML5, JS & CSS3/Sass</b>
+    <section>
+        <h2>Automatiseringskennis</h2>
+        <table class="automatisation">
+            <tr>
+                <th>
+                    <b>HTML5, JS & CSS3/Sass</b>
+                </th>
+                <td>
+                    uitgebreide kennis
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <b>PHP7, MySQL</b>
+                </th>
+                <td>
+                    uitgebreide kennis
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <b>NodeJS, ES6</b>
+                </th>
+                <td>
+                    uitgebreide kennis
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <b>ArangoDb</b>
+                </th>
+                <td>
+                    gemiddelde kennis
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <b>TypeScript</b>
+                </th>
+                <td>
+                    gemiddelde kennis
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <b>Python3</b>
+                </th>
+                <td>
+                    gemiddelde kennis
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <b>C & C++</b>
+                </th>
+                <td>
+                    gemiddelde kennis, vooral in audio/DSP
+                </td>
+            </tr>
+        </table>
+        <div class="automatisation blockcontainer">
+            <div class="block table">
+                <div class="blocktitle cell">
+                    <b>Operating systems</b>
+                </div>
+                <div class="blockcontent cell">
+                    Windows, MacOSX/UNIX, Linux en uitgebreide kennis Ubuntu/Debian Server
+                </div>
             </div>
-            <div class="cell">
-                uitgebreide kennis
+            <div class="block table">
+                <div class="blocktitle cell">
+                    <b>Frameworks, standaarden</b>
+                </div>
+                <div class="blockcontent cell">
+                    o.a. Laravel, Symfony, Express, REST, Apollo/GraphQL, OpenAPI, Webcomponents
+                </div>
+            </div>
+            <div class="block table">
+                <div class="blocktitle cell">
+                    <b>Development tools</b>
+                </div>
+                <div class="blockcontent cell">
+                    o.a. Vim, Git, PhpStorm, Kubernetes, Ansible, webpack en diverse CLI tools
+                </div>
+            </div>
+            <div class="block table">
+                <div class="blocktitle cell">
+                    <b>Media tools</b>
+                </div>
+                <div class="blockcontent cell">
+                    PureData, Jack, Sox, FFmpeg, VLC, Renoise, Reason, Ableton Live, GMagick, Gimp
+                </div>
+            </div>
+            <div class="block table">
+                <div class="blocktitle cell">
+                    <b>Methodiek, service tools</b>
+                </div>
+                <div class="blockcontent cell">
+                    Kanban, Scrum/Agile development, Jira en Zendesk. Minder is Meer en KISS.
+                </div>
             </div>
         </div>
-		<div class="row">
-			<div class="cell label">
-				<b>PHP7, MySQL</b>
-			</div>
-			<div class="cell">
-				uitgebreide kennis
-			</div>
-		</div>
-        <div class="row">
-            <div class="cell label">
-                <b>NodeJS, ES6</b>
-            </div>
-            <div class="cell">
-                uitgebreide kennis
-            </div>
-        </div>
-		<div class="row">
-			<div class="cell label">
-				<b>ArangoDb</b>
-			</div>
-			<div class="cell">
-				gemiddelde kennis
-			</div>
-		</div>
-		<div class="row">
-			<div class="cell label">
-				<b>TypeScript</b>
-			</div>
-			<div class="cell">
-				gemiddelde kennis
-			</div>
-		</div>
-        <div class="row">
-            <div class="cell label">
-                <b>Python3</b>
-            </div>
-            <div class="cell">
-                gemiddelde kennis
-            </div>
-        </div>
-		<div class="row">
-			<div class="cell label">
-				<b>C & C++</b>
-			</div>
-			<div class="cell">
-                gemiddelde kennis, vooral in audio/DSP
-			</div>
-		</div>
-    </div>
-    <div class="automatisation blockcontainer">
-        <div class="block table">
-            <div class="blocktitle cell">
-                <b>Operating systems</b>
-            </div>
-            <div class="blockcontent cell">
-                Windows, MacOSX/UNIX, Linux en uitgebreide kennis Ubuntu/Debian Server
-            </div>
-        </div>
-        <div class="block table">
-            <div class="blocktitle cell">
-                <b>Frameworks, standaarden</b>
-            </div>
-            <div class="blockcontent cell">
-                o.a. Laravel, Symfony, Express, REST, Apollo/GraphQL, OpenAPI, Webcomponents
-            </div>
-        </div>
-        <div class="block table">
-            <div class="blocktitle cell">
-                <b>Development tools</b>
-            </div>
-            <div class="blockcontent cell">
-                o.a. Vim, Git, PhpStorm, Kubernetes, Ansible, webpack en diverse CLI tools
-            </div>
-        </div>
-        <div class="block table">
-            <div class="blocktitle cell">
-                <b>Media tools</b>
-            </div>
-            <div class="blockcontent cell">
-                PureData, Jack, Sox, FFmpeg, VLC, Renoise, Reason, Ableton Live, GMagick, Gimp
-            </div>
-        </div>
-		<div class="block table">
-            <div class="blocktitle cell">
-                <b>Methodiek, service tools</b>
-            </div>
-            <div class="blockcontent cell">
-				Kanban, Scrum/Agile development, Jira en Zendesk. Minder is Meer en KISS.
-			</div>
-		</div>
-    </div>
+    </section>
 
-    <h2>Talen</h2>
-    <div class="language table">
-        <div class="row">
-            <div class="cell label">
-                <b>Nederlands</b>
-            </div>
-            <div class="cell">
-                moedertaal
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                <b>Engels</b>
-            </div>
-            <div class="cell">
-                volledige beheersing
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                <b>Duits</b>
-            </div>
-            <div class="cell">
-                redelijke beheersing in verstaan en spreken
-            </div>
-        </div>
-    </div>
+    <section>
+        <h2>Talen</h2>
+        <table class="language">
+            <tr>
+                <th>
+                    <b>Nederlands</b>
+                </th>
+                <td>
+                    moedertaal
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <b>Engels</b>
+                </th>
+                <td>
+                    volledige beheersing
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <b>Duits</b>
+                </th>
+                <td>
+                    redelijke beheersing in verstaan en spreken
+                </td>
+            </tr>
+        </table>
+    </section>
 
-</div>
+</main>
 </body>
 </html>

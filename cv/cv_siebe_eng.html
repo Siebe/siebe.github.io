@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <!--
 Thanks for taking the time to view the source of this document.
 This document is a single HTML 5 compliant file with style
-sheet included, made with notepad++ and the help of Chrome 
+sheet included, made with notepad++ and the help of Chrome
 developer tools and Google. Later updated using other tools
 as well. The icons are licensed under the Creative Commons
 Attribution by http://ipapun.deviantart.com/ and are free
@@ -15,10 +15,10 @@ Siebe
 
 <head>
     <title>CV Siebe Domeijer</title>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta charset="UTF-8">
     <style>
 
-        div.main {
+        main {
             display: block;
             max-width: 1024px;
             margin-left: auto;
@@ -44,13 +44,13 @@ Siebe
             margin-left: 5px;
         }
 
-        div.head {
+        header {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
         }
 
-        div.buttonlist {
+        nav.buttonlist {
             position: absolute;
             right: 5px;
         }
@@ -60,32 +60,26 @@ Siebe
             margin: 5px;
         }
 
-        div.table {
-            display: table;
+        table {
             width: 100%;
             border-bottom: 1px solid #B0B0B0;
             border-right: 1px solid #B0B0B0;
             box-shadow: 4px 4px 2px #909090;
             margin-bottom: 10px;
+            border-spacing: 0;
         }
 
-        div.row {
-            display: table-row;
-        }
-
-        div.cell {
-            position: relative;
-            z-index: 2;
-            display: table-cell;
-            width: 75%;
+        td, th {
             padding: 5px;
             border-top: 1px solid #D0D0D0;
             border-left: 1px solid #D0D0D0;
+            text-align: left;
         }
 
-        div.label {
+        th {
             width: 25%;
             vertical-align: middle;
+            font-weight: normal;
         }
 
         div.blockcontainer {
@@ -158,12 +152,12 @@ Siebe
         }
 
         @media screen and (max-width: 800px) {
-            div.head div.buttonlist {
+            header nav.buttonlist {
                 position: relative;
                 right: 0px;
             }
 
-            div.head h1 {
+            header h1 {
                 flex-basis: 100%;
                 text-align: center;
                 margin: 8px 0;
@@ -205,11 +199,11 @@ Siebe
                 display: none;
             }
 
-            div.main {
+            main {
                 margin: 0px;
             }
 
-            div.table {
+            table {
                 font-size: 11px;
             }
 
@@ -240,7 +234,7 @@ Siebe
                 background: #202020;
             }
 
-            div.main {
+            main {
                 color: #D0D0D0;
             }
 
@@ -264,15 +258,15 @@ Siebe
 </head>
 <body>
 
-<div class="main">
+<main>
     <div class="pageheader">
         CV Siebe Domeijer 1/2
     </div>
-    <div class="head">
+    <header>
 
         <h1>Curriculum Vitae</h1>
 
-        <div class="buttonlist no-print">
+        <nav class="buttonlist no-print">
             <div class="button">
                 <img src="//i.imgur.com/gAMQEZQ.png" alt="Print page" title="Print page" onClick="window.print()">
             </div>
@@ -294,394 +288,406 @@ Siebe
             <div class="button">
                 <a href="cv_siebe.html"><span title="Nederlandse versie">NL</span></a>
             </div>
-        </div>
-    </div>
-    <h2>Personal Data</h2>
-    <div class="personal-data table">
-        <div class="row">
-            <div class="cell label">
-                Full name
-            </div>
-            <div class="cell">
-                Domeijer, Siebe Diederich
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                First name
-            </div>
-            <div class="cell">
-                Siebe
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                Email
-            </div>
-            <div class="cell">
-                <a class="email" href="mailto:s.domeijer@gmail.com">s.domeijer@gmail.com</a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                Address
-            </div>
-            <div class="cell">
-                Hilversum
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                Birthdate
-            </div>
-            <div class="cell">
-                23 juni 1984
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                Birthplace
-            </div>
-            <div class="cell">
-                Hilversum
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                Drivers licence
-            </div>
-            <div class="cell">
-                B
-            </div>
-        </div>
-    </div>
+        </nav>
+    </header>
+    <section>
+        <h2>Personal Data</h2>
+        <table class="personal-data">
+            <tr>
+                <th>
+                    Full name
+                </th>
+                <td>
+                    Domeijer, Siebe Diederich
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    First name
+                </th>
+                <td>
+                    Siebe
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Email
+                </th>
+                <td>
+                    <a class="email" href="mailto:s.domeijer@gmail.com">s.domeijer@gmail.com</a>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Address
+                </th>
+                <td>
+                    Hilversum
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Birthdate
+                </th>
+                <td>
+                    23 juni 1984
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Birthplace
+                </th>
+                <td>
+                    Hilversum
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Drivers licence
+                </th>
+                <td>
+                    B
+                </td>
+            </tr>
+        </table>
+    </section>
 
-    <h2>Education</h2>
-    <div class="education table">
-        <div class="row">
-            <div class="cell label">
-                August 2001
-            </div>
-            <div class="cell">
-                <b>Transfer Reference Atheneum 3>4</b><br>
-                Baarnsch Lyceum in Baarn, NL
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                August 2005
-            </div>
-            <div class="cell">
-                <b>Middle Management Diploma Telematics</b><br>
-                ROC Midden Nederland, Utrecht, NL<br>
-                Part-time education (MBO level 4)
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                June 2010
-            </div>
-            <div class="cell">
-                <b>Diploma Bachelor with Hounours of Art and Technology </b><br>
-                <a href ="http://www.hku.nl/English/FacultyOfArtMediaTechnology/AboutTheFaculty.htm" target="_blank">HKU Kunst, Media & Technologie</a> in Hilversum<br>
-                Fulltime Education MusicTechnology, Audiodesign, courses: Softwaredesign and Sonicdesign
-            </div>
-        </div>
-    </div>
+    <section>
+        <h2>Education</h2>
+        <table class="education">
+            <tr>
+                <th>
+                    August 2001
+                </th>
+                <td>
+                    <b>Transfer Reference Atheneum 3>4</b><br>
+                    Baarnsch Lyceum in Baarn, NL
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    August 2005
+                </th>
+                <td>
+                    <b>Middle Management Diploma Telematics</b><br>
+                    ROC Midden Nederland, Utrecht, NL<br>
+                    Part-time education (MBO level 4)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    June 2010
+                </th>
+                <td>
+                    <b>Diploma Bachelor with Hounours of Art and Technology </b><br>
+                    <a href ="http://www.hku.nl/English/FacultyOfArtMediaTechnology/AboutTheFaculty.htm" target="_blank">HKU Kunst, Media & Technologie</a> in Hilversum<br>
+                    Fulltime Education MusicTechnology, Audiodesign, courses: Softwaredesign and Sonicdesign
+                </td>
+            </tr>
+        </table>
+    </section>
 
-    <h2>Work history</h2>
-    <div class="experience table">
-        <div class="row">
-            <div class="cell label">
-                Februari 2015 until present
-            </div>
-            <div class="cell">
-                <b>Pluxbox in Hilversum, NL</b> Webdevelopment<br>
-                <a href="http://pluxbox.com" target="_blank">Pluxbox</a> specializes in platforms, tools and metadata
-                for radio stations. Their main projects are <a href="https://radiomanager.io" target="_blank">
-                RadioManager</a>, <a href="https://metadata.radio" target="_blank">metadata.radio</a> and the
-                <a href="https://pluxbox.com/pluxbox-platform/" target="_blank">Pluxbox Platform</a>
-                <hr>
-                Design, implementation, hosting and support of web applications, mostly to support radio production.<br>
-                Mainly backend work using TypeScript, PHP, Bash, Python, MySQL, Redis, MongoDB and more.<br>
-                Frontend using TypeScript, AngularJS, ReactJS, Webcomponents and more.<br>
-                Hosting, deployment and maintenance on Linux using Nginx, Ansible, Kubernetes and more.<br>
-                Current title is Tech Lead, but also functioning as Product Owner for several projects.
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                October 2012 until December 2014
-            </div>
-            <div class="cell">
-                <b>Creative Crowds in Amsterdam, NL</b> Webdevelopment<br>
-                <a href="http://creativecrowds.com" target="_blank">CreativeCrowdss</a> specializes in platforms for
-                crowdsourcing applications and communities. Their main project was
-                <a href="http://www.verbeterdebuurt.nl" target="_blank">VerbeterDeBuurt</a>.
-                <hr>
-                Design, implementation and hosting of web applications.<br>
-                Mainly backend work using PHP, MySQL and PostgreSQL. Frontend with Mootools and Google Maps API.<br>
-                Hosting and administration on Linux, using Apache, Nagios, Perl and more.
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                June 2005 until December 2011
-            </div>
-            <div class="cell">
-                <b>Ampco-Flashlight Group in Utrecht, NL</b> Sound and Light Rentals<br>
-                At first warehouse employee on Saturdays and holidays, during studies.
-                Full-time employee since 2009.
-                Service-center employee for light equipment.
-                Warehouse and expedition foreman on Saturdays.
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                October 2006 until August 2009
-            </div>
-            <div class="cell">
-                <b>Hogeschool Kunsten Utrecht, KMT in Hilversum, NL</b> Education<br>
-                Practicum Assistant. Assisting fellow students usage of Max/MSP.
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                April 2012 until August 2012
-            </div>
-            <div class="cell">
-                Mailman and sorting clerk at PostNL in Soest, NL
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                January 2004 t/m May 2005
-            </div>
-            <div class="cell">
-                Temporary work via UBN te Amersfoort: including warehouse management at TVF (Optics) in Soesterberg, NL
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                mid 2002
-            </div>
-            <div class="cell">
-                Assistant Electrician at Breunesse Bv. in Baarn, NL
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                start 2002 until end 2002
-            </div>
-            <div class="cell">
-                Assistant Electrician at v.d. Hoogen eng. Bv. in Bunschoten, NL
-            </div>
-        </div>
-    </div>
+    <section>
+        <h2>Work history</h2>
+        <table class="experience">
+            <tr>
+                <th>
+                    Februari 2015 until present
+                </th>
+                <td>
+                    <b>Pluxbox in Hilversum, NL</b> Webdevelopment<br>
+                    <a href="http://pluxbox.com" target="_blank">Pluxbox</a> specializes in platforms, tools and metadata
+                    for radio stations. Their main projects are <a href="https://radiomanager.io" target="_blank">
+                    RadioManager</a>, <a href="https://metadata.radio" target="_blank">metadata.radio</a> and the
+                    <a href="https://pluxbox.com/pluxbox-platform/" target="_blank">Pluxbox Platform</a>
+                    <hr>
+                    Design, implementation, hosting and support of web applications, mostly to support radio production.<br>
+                    Mainly backend work using TypeScript, PHP, Bash, Python, MySQL, Redis, MongoDB and more.<br>
+                    Frontend using TypeScript, AngularJS, ReactJS, Webcomponents and more.<br>
+                    Hosting, deployment and maintenance on Linux using Nginx, Ansible, Kubernetes and more.<br>
+                    Current title is Tech Lead, but also functioning as Product Owner for several projects.
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    October 2012 until December 2014
+                </th>
+                <td>
+                    <b>Creative Crowds in Amsterdam, NL</b> Webdevelopment<br>
+                    <a href="http://creativecrowds.com" target="_blank">CreativeCrowdss</a> specializes in platforms for
+                    crowdsourcing applications and communities. Their main project was
+                    <a href="http://www.verbeterdebuurt.nl" target="_blank">VerbeterDeBuurt</a>.
+                    <hr>
+                    Design, implementation and hosting of web applications.<br>
+                    Mainly backend work using PHP, MySQL and PostgreSQL. Frontend with Mootools and Google Maps API.<br>
+                    Hosting and administration on Linux, using Apache, Nagios, Perl and more.
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    June 2005 until December 2011
+                </th>
+                <td>
+                    <b>Ampco-Flashlight Group in Utrecht, NL</b> Sound and Light Rentals<br>
+                    At first warehouse employee on Saturdays and holidays, during studies.
+                    Full-time employee since 2009.
+                    Service-center employee for light equipment.
+                    Warehouse and expedition foreman on Saturdays.
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    October 2006 until August 2009
+                </th>
+                <td>
+                    <b>Hogeschool Kunsten Utrecht, KMT in Hilversum, NL</b> Education<br>
+                    Practicum Assistant. Assisting fellow students usage of Max/MSP.
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    April 2012 until August 2012
+                </th>
+                <td>
+                    Mailman and sorting clerk at PostNL in Soest, NL
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    January 2004 t/m May 2005
+                </th>
+                <td>
+                    Temporary work via UBN te Amersfoort: including warehouse management at TVF (Optics) in Soesterberg, NL
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    mid 2002
+                </th>
+                <td>
+                    Assistant Electrician at Breunesse Bv. in Baarn, NL
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    start 2002 until end 2002
+                </th>
+                <td>
+                    Assistant Electrician at v.d. Hoogen eng. Bv. in Bunschoten, NL
+                </td>
+            </tr>
+        </table>
+    </section>
 
     <div class="pagebreak"></div>
     <div class="pageheader">CV Siebe Domeijer 2/2</div>
 
-    <h2>Volunteer work history</h2>
-    <div class="volunteer table">
-        <div class="row">
-            <div class="cell label">
-                2022 until now
-            </div>
-            <div class="cell">
-                Engineer and DJ at Simbiosis Studios, Hilversum
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                2011 until 2013
-            </div>
-            <div class="cell">
-                Plugin developer for various games
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                2007 until 2013
-            </div>
-            <div class="cell">
-                Webmaster for various community forums on games
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                2006 until 2010
-            </div>
-            <div class="cell">
-                Technical organisation at schoolfestivals "Nieuwe Verse Groenten" for the HKU
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                June 2005
-            </div>
-            <div class="cell">
-                Lead Lighttechnician TorenPop 2005, Amersfoort
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                Augustus 2004
-            </div>
-            <div class="cell">
-                Lighttechnician TorenPop 2004, Amersfoort
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                1999 until 2000
-            </div>
-            <div class="cell">
-                Cultural Senior (student organisation) Baarnsch Lyceum
-            </div>
-        </div>
-        <div class="row">
-            <div class="cell label">
-                1999 until 2002
-            </div>
-            <div class="cell">
-                Sales assistant at Future Audio, Baarn.
-            </div>
-        </div>
-    </div>
+    <section>
+        <h2>Volunteer work history</h2>
+        <table class="volunteer">
+            <tr>
+                <th>
+                    2022 until now
+                </th>
+                <td>
+                    Engineer and DJ at Simbiosis Studios, Hilversum
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    2011 until 2013
+                </th>
+                <td>
+                    Plugin developer for various games
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    2007 until 2013
+                </th>
+                <td>
+                    Webmaster for various community forums on games
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    2006 until 2010
+                </th>
+                <td>
+                    Technical organisation at schoolfestivals "Nieuwe Verse Groenten" for the HKU
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    June 2005
+                </th>
+                <td>
+                    Lead Lighttechnician TorenPop 2005, Amersfoort
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Augustus 2004
+                </th>
+                <td>
+                    Lighttechnician TorenPop 2004, Amersfoort
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    1999 until 2000
+                </th>
+                <td>
+                    Cultural Senior (student organisation) Baarnsch Lyceum
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    1999 until 2002
+                </th>
+                <td>
+                    Sales assistant at Future Audio, Baarn.
+                </td>
+            </tr>
+        </table>
+    </section>
 
-    <h2>Programming skills</h2>
-    <div class="automatisation table">
-        <div class="row">
-            <div class="cell label">
-                <b>HTML5, JS & CSS3/Sass</b>
-            </div>
-            <div class="cell">
-                highly skilled
-            </div>
-        </div>
-		<div class="row">
-			<div class="cell label">
-				<b>PHP7, MySQL</b>
-			</div>
-			<div class="cell">
-                highly skilled
-			</div>
-		</div>
-        <div class="row">
-            <div class="cell label">
-                <b>NodeJS, NPM, TypeScript</b>
-            </div>
-            <div class="cell">
-                highly skilled
-            </div>
-        </div>
-		<div class="row">
-			<div class="cell label">
-				<b>Bash</b>
-			</div>
-			<div class="cell">
-                highly skilled
-			</div>
-		</div>
-		<div class="row">
-			<div class="cell label">
-				<b>POSIX Shell</b>
-			</div>
-			<div class="cell">
-                skilled
-			</div>
-		</div>
-        <div class="row">
-            <div class="cell label">
-                <b>Python3</b>
-            </div>
-            <div class="cell">
-                skilled
-            </div>
-        </div>
-		<div class="row">
-			<div class="cell label">
-				<b>C & C++</b>
-			</div>
-			<div class="cell">
-                skilled, audio/DSP oriented
-			</div>
-		</div>
-    </div>
-    <div class="automatisation blockcontainer">
-        <div class="block table">
-            <div class="blocktitle cell">
-                <b>Operating systems</b>
-            </div>
-            <div class="blockcontent cell">
-                Windows, MacOSX/UNIX, Linux and high knowledge of Ubuntu/Debian Server
-            </div>
-        </div>
-        <div class="block table">
-            <div class="blocktitle cell">
-                <b>Frameworks and standards</b>
-            </div>
-            <div class="blockcontent cell">
-                Laravel, Symfony, Express, REST, Apollo/GraphQL, OpenAPI, Web components, CI/CD
-            </div>
-        </div>
-        <div class="block table">
-            <div class="blocktitle cell">
-                <b>Development tools and techniques</b>
-            </div>
-            <div class="blockcontent cell">
-                NeoVim, Oh-My-ZSH, Git, PhpStorm, Kubectl, Docker Compose, curl, sed, grep, VM's,
-                Ansible, Webpack
-            </div>
-        </div>
-        <div class="block table">
-            <div class="blocktitle cell">
-                <b>Media tools</b>
-            </div>
-            <div class="blockcontent cell">
-                PureData, Jack, Sox, FFmpeg, ImageMagick, Renoise, Reason, Ableton Live, Gimp, Mixxx
-            </div>
-        </div>
-		<div class="block table">
-            <div class="blocktitle cell">
-                <b>Methodology, service tools</b>
-            </div>
-            <div class="blockcontent cell">
-				Kanban, Scrum/Agile development, Jira en Zendesk. Less is More and KISS.
-			</div>
-		</div>
-    </div>
-
-        <h2>Languages</h2>
-        <div class="language table">
-            <div class="row">
-                <div class ="cell label">
-                    <b>Dutch</b>
-                </div>
-                <div class="cell">
-                    native language
-                </div>
-            </div>
-            <div class="row">
-                <div class ="cell label">
-                    <b>English</b>
-                </div>
-                <div class="cell">
+    <section>
+        <h2>Programming skills</h2>
+        <table class="automatisation">
+            <tr>
+                <th>
+                    <b>HTML5, JS & CSS3/Sass</b>
+                </th>
+                <td>
                     highly skilled
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <b>PHP7, MySQL</b>
+                </th>
+                <td>
+                    highly skilled
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <b>NodeJS, NPM, TypeScript</b>
+                </th>
+                <td>
+                    highly skilled
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <b>Bash</b>
+                </th>
+                <td>
+                    highly skilled
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <b>POSIX Shell</b>
+                </th>
+                <td>
+                    skilled
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <b>Python3</b>
+                </th>
+                <td>
+                    skilled
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <b>C & C++</b>
+                </th>
+                <td>
+                    skilled, audio/DSP oriented
+                </td>
+            </tr>
+        </table>
+        <div class="automatisation blockcontainer">
+            <div class="block table">
+                <div class="blocktitle cell">
+                    <b>Operating systems</b>
+                </div>
+                <div class="blockcontent cell">
+                    Windows, MacOSX/UNIX, Linux and high knowledge of Ubuntu/Debian Server
                 </div>
             </div>
-            <div class="row">
-                <div class ="cell label">
-                    <b>German</b>
+            <div class="block table">
+                <div class="blocktitle cell">
+                    <b>Frameworks and standards</b>
                 </div>
-                <div class="cell">
-                    skilled in speaking and understanding
+                <div class="blockcontent cell">
+                    Laravel, Symfony, Express, REST, Apollo/GraphQL, OpenAPI, Web components, CI/CD
+                </div>
+            </div>
+            <div class="block table">
+                <div class="blocktitle cell">
+                    <b>Development tools and techniques</b>
+                </div>
+                <div class="blockcontent cell">
+                    NeoVim, Oh-My-ZSH, Git, PhpStorm, Kubectl, Docker Compose, curl, sed, grep, VM's,
+                    Ansible, Webpack
+                </div>
+            </div>
+            <div class="block table">
+                <div class="blocktitle cell">
+                    <b>Media tools</b>
+                </div>
+                <div class="blockcontent cell">
+                    PureData, Jack, Sox, FFmpeg, ImageMagick, Renoise, Reason, Ableton Live, Gimp, Mixxx
+                </div>
+            </div>
+            <div class="block table">
+                <div class="blocktitle cell">
+                    <b>Methodology, service tools</b>
+                </div>
+                <div class="blockcontent cell">
+                    Kanban, Scrum/Agile development, Jira en Zendesk. Less is More and KISS.
                 </div>
             </div>
         </div>
+    </section>
+
+    <section>
+        <h2>Languages</h2>
+        <table class="language">
+            <tr>
+                <th>
+                    <b>Dutch</b>
+                </th>
+                <td>
+                    native language
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <b>English</b>
+                </th>
+                <td>
+                    highly skilled
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <b>German</b>
+                </th>
+                <td>
+                    skilled in speaking and understanding
+                </td>
+            </tr>
+        </table>
+    </section>
 
 
-</div>
+</main>
 </body>
 </html>

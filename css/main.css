@@ -1,31 +1,96 @@
+/* General Body Styling */
 body {
-	overflow:hidden;
-	margin: 0px;
+    font-family: 'Lato', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    line-height: 1.6;
 }
 
-/* Debug */
-
-div#debug {
-	position: absolute;
-	top: 5px;
-	left: 5px;
-	width: 256px;
-	height: 512px;
-	padding: 5px;
-	border: 1px solid rgba(0,0,0,0.5);
-	color: rgba(0,0,0,0.7);
-	font: 12px monospace;
-	
+/* Main container */
+main {
+    width: 90%;
+    max-width: 800px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
-div#debug-table {
-	display: table;
+/* Header */
+h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-weight: 300;
 }
 
-div.debug-row {
-	display: table-row;
+/* Section Styling */
+section {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
-div.debug-cell {
-	display: table-row;
+section:not(:last-child) {
+    border-bottom: 1px solid #ecf0f1;
 }
+
+/* Lists */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Links */
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1.1rem;
+}
+
+a:hover, a:focus {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    main {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    a {
+        font-size: 1rem;
+    }
+}
+
+/* Import Google Font - Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
